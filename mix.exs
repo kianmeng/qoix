@@ -31,7 +31,8 @@ defmodule Qoix.MixProject do
   defp deps do
     [
       {:stream_data, "~> 0.5", only: [:dev, :test]},
-      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
+      {:earmark_parser, git: "https://github.com/RobertDober/earmark_parser", override: true, branch: "master"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
